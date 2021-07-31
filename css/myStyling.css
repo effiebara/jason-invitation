@@ -2,3 +2,7 @@
     width: 4em;
     height: 4em;
 }
+.vertical-center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
