@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Our Church</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/myStyling.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/myStyling.css" />
+
+    <style>
+        .mapouter {
+          position: relative;
+          text-align: center;
+          width: 500px;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 30em;
+        }
+      </style>
+      
   </head>
   <body>
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">
-                            <img class="website-logo" src="./images/jasonProfil.jpg" alt="jason's profile">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./our-photos.html">Our Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./our-church.html">Our Church</a>
-                    </li>
-                    
-                </ul>
-                
-            </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <img
+                  class="website-logo rounded-circle"
+                  src="./images/jasonProfil.jpg"
+                  alt="jason's profile"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./our-photos.html">Our Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./our-church.html">Our Church</a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Agios%20Spyridon,%20Porto%20Rafti&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <address>
+            <strong>Agios Spyridonas</strong><br />
+            Kalvou, Porto Rafti<br />
+            190 03<br />
+            <abbr title="Phone">P:</abbr><a href="tel:6984953172">6984953172</a>
+          </address>
+        </div>
+      </div>
     </div>
-    
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
