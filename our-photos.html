@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><style>
+   .scroll-left {
+      height: 50px;	
+      overflow: hidden;
+      position: relative;
+      background:lightblue;
+      color:yellowgreen;
+      border: 1px solid yellowgreen;
+     }
+     .scroll-left p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      transform:translateX(100%);
+      /* Apply animation to this element */
+      animation: scroll-left 15s linear infinite;
+     }
+     /* Move it (define the animation) */
+     @keyframes scroll-left {
+      0%   {
+      transform: translateX(100%); 		
+      }
+      100% {
+      transform: translateX(-100%); 
+      }
+     }</style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,6 +66,10 @@
           </ul>
         </div>
       </div>
+      
+      <div class="scroll-left">
+         <p>Just me</p>
+         </div>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -449,6 +482,10 @@
                   />
                 </div>
               </div>
+              <br></br>
+              <div class="scroll-left">
+               <p>Me and my mommy</p>
+               </div>
               <a
                 class="carousel-control-prev"
                 href="#carousel-287197"
