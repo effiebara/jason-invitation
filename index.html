@@ -24,19 +24,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        document.getElementById("move-it").play();
+        
         $("#envelope").bind("click", function () {
           $("#envelope").fadeOut(); // na eksafanistei
           $("#travel").fadeIn(); // na emfanistei
           $("#text").fadeIn();
         });
       });
-
-    //   $(document).ready(function () {
-    //     $("#video-move-it").bind("click" , function(){
-    //         console.log("a");
-    //     });
-    //   });
+      $(document).ready(function() {
+    $("#my_audio").get(0).play();
+});
+    
       
     </script>
   </head>
@@ -108,10 +106,8 @@
     
       
     </div>
-   
-      <audio controls="controls" id="move-it">
-        <source src="./videos/I Like To Move It (Original Video) Madagascar HD.mp3" type="audio/mpeg"/> 
-     </audio>
+    <audio id="my_audio" src="videos/I Like To Move It (Original Video) Madagascar HD.mp3" autoplay="autoplay" loop="loop"></audio>" src="bg.mp3" autoplay="autoplay" loop="loop"></audio>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
