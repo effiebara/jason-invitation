@@ -24,12 +24,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
+        document.getElementById("move-it").play();
         $("#envelope").bind("click", function () {
           $("#envelope").fadeOut(); // na eksafanistei
           $("#travel").fadeIn(); // na emfanistei
           $("#text").fadeIn();
         });
       });
+
+    //   $(document).ready(function () {
+    //     $("#video-move-it").bind("click" , function(){
+    //         console.log("a");
+    //     });
+    //   });
+      
     </script>
   </head>
   <body style="background-color: rgb(86, 218, 223);">
@@ -55,7 +63,8 @@
             </li>
           </ul>
           <div class="row">
-            <iframe
+            <!-- <iframe
+            id="video-move-it"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/hdcTmpvDO0I"
@@ -63,7 +72,12 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            ></iframe> -->
+
+            <video id="video-move-it" width="320" height="240"  controls>
+                <source src="./videos/I Like To Move It (Original Video) Madagascar HD.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
           </div>
         </div>
       </div>
@@ -95,7 +109,10 @@
     
       
     </div>
+    <audio controls id="move-it">
 
+        <source src="./videos/I Like To Move It (Original Video) Madagascar HD.mp3" type="audio/mpeg">
+      </audio>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
