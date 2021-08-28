@@ -6,3 +6,64 @@
 [data-component="slideshow"] .slide.active {
 	display: block;
 }
+
+
+#game{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    background-image: url('../images/background.jpg');
+}
+
+#character{
+    width: 150px;
+    height:270px;
+    position: relative;
+    top: 330px;
+    
+}
+.animate{
+    animation: jump 1s;
+}
+
+#block{
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: 180px;
+    left: 300px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:300px;}
+    100%{left:-10px;}
+}
+
+@keyframes jump {
+    0%{top:330px;}
+    50%{top: 60px;}
+    70%{top: 200px;}
+    100%{top:330px;}
+}
+
+#character-Ian{
+    width: 150px;
+    height:270px;
+}
+
+#block-priest{
+    width: 100px;
+    height: 150px;
+}
+
+.blink_me {
+    font-size: xx-large;
+    text-align: center;
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
