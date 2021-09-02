@@ -31,3 +31,20 @@ function jump(){
         character.classList.remove("animate");
     },500);
 }
+
+
+
+
+setInterval(checkIfCrashed, 100);
+
+function checkIfCrashed(){
+	var characterTop = character.offsetTop;
+	var characterLeft = character.offsetLeft;
+	var blockTop = block.offsetTop;
+	var blockLeft = block.offsetLeft;
+
+	console.log("characterTop is "+characterTop+" characterLeft is"+ characterLeft);
+	console.log("blockTop is"+ blockTop+" blockLeft is "+blockLeft);
+
+	if (blockLeft==150px)
+}
